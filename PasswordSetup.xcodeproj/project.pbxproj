@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1524F32226F020B2005B024B /* PasswordSetupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1524F32126F020B2005B024B /* PasswordSetupApp.swift */; };
-		1524F32426F020B2005B024B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1524F32326F020B2005B024B /* ContentView.swift */; };
+		1524F32426F020B2005B024B /* PasswordSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1524F32326F020B2005B024B /* PasswordSetupView.swift */; };
 		1524F32626F020B5005B024B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1524F32526F020B5005B024B /* Assets.xcassets */; };
 		1524F32926F020B5005B024B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1524F32826F020B5005B024B /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		1524F31E26F020B2005B024B /* PasswordSetup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordSetup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1524F32126F020B2005B024B /* PasswordSetupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSetupApp.swift; sourceTree = "<group>"; };
-		1524F32326F020B2005B024B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1524F32326F020B2005B024B /* PasswordSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSetupView.swift; sourceTree = "<group>"; };
 		1524F32526F020B5005B024B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1524F32826F020B5005B024B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1524F32A26F020B5005B024B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				1524F32126F020B2005B024B /* PasswordSetupApp.swift */,
-				1524F32326F020B2005B024B /* ContentView.swift */,
+				1524F32326F020B2005B024B /* PasswordSetupView.swift */,
 				1524F32526F020B5005B024B /* Assets.xcassets */,
 				1524F32A26F020B5005B024B /* Info.plist */,
 				1524F32726F020B5005B024B /* Preview Content */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1524F32426F020B2005B024B /* ContentView.swift in Sources */,
+				1524F32426F020B2005B024B /* PasswordSetupView.swift in Sources */,
 				1524F32226F020B2005B024B /* PasswordSetupApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

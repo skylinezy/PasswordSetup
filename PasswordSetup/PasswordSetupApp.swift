@@ -11,7 +11,7 @@ import SwiftUI
 struct PasswordSetupApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PasswordSetupView()
         }
     }
 }
