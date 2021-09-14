@@ -39,21 +39,18 @@ struct PasswordSetupView: View {
         }
     }
     
+    @State private var outputStr: String = ""
     func savePassword() -> Void {
         print("Saved password: \(password)")
-        UserDefaults.standard.set(password, forKey: "KMASTER_PASSWORD")
+        outputStr = "Password set: \(password)"
     }
     
     var body: some View {
         VStack(){
-            TextField("Enter Password", text: $password)
-                .textFieldStyle(PlainTextFieldStyle())
-                .padding(5)
-                .disableAutocorrection(true)
-                .autocapitalization(.none)
-                .onChange(of: password) { newPassword in
-                    checkPassword()
-                }
+            PasswordInputField(label: "Enter Password", text: $password, onChange: { _ in
+                checkPassword()
+            })
+            .padding(.horizontal, 10)
             
             VStack(alignment: .leading, spacing: 2) {
                 HStack() {
@@ -119,11 +116,8 @@ struct PasswordSetupView: View {
                 }
             }
             
-            TextField("Re-enter Password", text: $confirmPassword)
-                .textFieldStyle(PlainTextFieldStyle())
-                .padding(5)
-                .disableAutocorrection(true)
-                .autocapitalization(.none)
+            PasswordInputField(label: "Re-Enter Password", text: $confirmPassword)
+                .padding(.horizontal, 10)
             
             HStack() {
                 Image(systemName: "checkmark.circle")
@@ -139,6 +133,8 @@ struct PasswordSetupView: View {
             Button(action:{
                 if password.count>0 && password == confirmPassword {
                     savePassword()
+                } else {
+                    outputStr = "Password does not match!"
                 }
             }) {
                 HStack(){
@@ -153,6 +149,8 @@ struct PasswordSetupView: View {
                 )
                 .accentColor(Color.white)
             }
+            
+            Text(outputStr)
         }
     }
 }
